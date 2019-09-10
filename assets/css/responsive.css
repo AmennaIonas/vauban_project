@@ -1,0 +1,86 @@
+@media(max-width: 1440px){
+    .card-image i{
+        font-size: 30px;
+    }
+    .todo-footer button{
+        width: 100%;
+        margin: 10px;
+        float: none!important;
+    }
+}
+
+@media(max-width: 992px){
+    .content-wrapper .row:nth-child(2)>div:nth-child(2) .dashboard-card-colored{
+        margin: 0 20px 10px 0;
+    }
+    .content-wrapper .row:nth-child(2)>div:nth-child(3) .dashboard-card-colored{
+        margin: 0 0 10px 20px;
+    }
+    .dashboard-card-simple .card-number{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 768px){
+    .main-header .logo{
+        width: 100%;
+        text-align: center;
+    }
+    .main-header .navbar{
+        margin-left: 0;
+    }
+    #main-sidebar{
+        display: none;
+    }
+    .content-wrapper {
+        margin-left: 0;
+    }
+    .card-todo {
+        margin-left: 20px;
+    }
+    .card-leads{
+        margin-right: 20px;
+    }
+    .todo-footer {
+        margin-left: 20px;
+    }
+    .dashboard-activities-line, .dashboard-activities-pie {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .dashboard-analytics{
+        margin: 20px;
+    }
+    .open-menu{
+        display: block;
+        color: #fff;
+    }
+    .close-menu{
+        color: #fff;
+    }
+
+}
+
+@media(max-width: 576px){
+    .dashboard-card-simple{
+        margin: 20px!important;
+    }
+    .content-wrapper .row:nth-child(2)>div:first-child .dashboard-card-colored{
+        margin: 20px;
+    }
+    .content-wrapper .row:nth-child(2)>div:nth-child(2) .dashboard-card-colored{
+        margin: 20px;
+    }
+    .content-wrapper .row:nth-child(2)>div:nth-child(3) .dashboard-card-colored{
+        margin: 20px;
+    }
+    .content-wrapper .row:nth-child(2)>div:nth-child(4) .dashboard-card-colored{
+        margin: 20px;
+    }
+
+    canvas#line-chart-sales {
+        width: 100% !important;
+        max-width: 300px;
+        height: auto !important;
+    }
+}

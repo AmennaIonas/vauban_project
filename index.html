@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Vauban Project</title>
+
+    <!--CSS files-->
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <!--JQuery-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+<!--Top Navbar-->
+<header class="main-header">
+
+    <!-- Logo -->
+    <a href="#" class="logo">
+        <i class="fa fa-gg"></i>Logo here
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar">
+        <!-- Navbar Left Side -->
+        <a href="#" class="navbar-title">
+            Dashboard
+        </a>
+        <!-- Top Navbar Right Side Menu -->
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+                <!-- Notifications (bell) icon -->
+                <li class="dropdown messages-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                        <span class="label label-success">3</span>
+                    </a>
+                </li>
+                <!-- Messages icon -->
+                <li class="dropdown notifications-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span class="label label-warning">4</span>
+                    </a>
+                </li>
+                <!--Search icon-->
+                <li>
+                    <a href="#">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <!-- Control Sidebar Toggle Button -->
+                <li>
+                    <a href="#">
+                        <i class="fa fa-th open-menu" aria-hidden="true"></i>
+                        <i class="fa fa-times close-menu" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!--Sidebar menu-->
+<aside class="main-sidebar" id="main-sidebar">
+
+    <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="assets/img_avatar.png" class="img-circle">
+            </div>
+            <div class="pull-left info">
+                <p>MOHAMED SAID</p>
+                <p>Founder of App <i class="fa fa-caret-down" aria-hidden="true"></i></p>
+            </div>
+        </div>
+
+        <hr>
+
+        <ul class="sidebar-menu">
+            <li class="header">UI Kits</li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                    <span>Apps</span>
+                    <span class="pull-right-container">
+                        <small class="label pull-right sidebar-red">3</small>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <span>Components</span>
+                    <span class="pull-right-container">
+                        <small class="label pull-right sidebar-green">9</small>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>Email</span>
+                    <span class="pull-right-container">
+                        <small class="label pull-right sidebar-orange">4</small>
+                    </span>
+                </a>
+
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-edit"></i> <span>Form</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-map"></i> <span>Maps</span></a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-files-o"></i>
+                    <span>Pages</span>
+                    <span class="pull-right-container">
+                        <small class="label pull-right sidebar-blue">8</small>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-bars"></i> <span>Menu</span></a>
+            </li>
+            <hr>
+            <li>
+                <a href="#"><i class="fa fa-cog"></i> <span>Settings</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-clipboard"></i>
+                    <span>Document</span>
+                    <span class="pull-right-container">
+                        <small class="label pull-right sidebar-blue">2</small>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-html5"></i> <span>HTML Version</span></a>
+            </li>
+        </ul>
+
+    </section>
+</aside>
+
+<div class="content-wrapper">
+    <section class="content">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-12">
+                <div class="card dashboard-card-simple">
+                    <div class="row">
+                        <div class="col-md-9 col-sm-9 col-9">
+                            <div class="card-body">
+                                <h5 class="card-title">Welcome to Infinity</h5>
+                                <p class="card-text">Number of views</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <span class="card-number">102</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6  col-12">
+                <div class="card dashboard-card-simple">
+                    <div class="row">
+                        <div class="col-md-9 col-sm-9 col-9">
+                            <div class="card-body">
+                                <h5 class="card-title">Active</h5>
+                                <p class="card-text">Leads/Contacts</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-3">
+                            <span class="card-number">325</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6  col-12">
+                <div class="card dashboard-card-colored">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-8 col-sm-8 col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">66,136k</h5>
+                                <p class="card-text">Total Leads</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-4 col-sm-4 col-4">
+                            <span class="card-image">
+                                <i class="fa fa-paperclip" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-blue">
+                        <div class="col-xl-4 col-lg-12 col-md-12 col-sm-6 col-6 float-left">
+                            <p class="float-left">% change</p>
+                        </div>
+                        <div class="col-xl-8 col-lg-12 col-md-12 col-sm-6 col-6 float-right">
+                            <canvas id="bar-chart-leads" width="100" height="40"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6  col-12">
+                <div class="card dashboard-card-colored">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-8 col-sm-8 col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">3,490k</h5>
+                                <p class="card-text">Total Pending</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-4 col-sm-4 col-4">
+                            <span class="card-image">
+                                <i class="fa fa-ban" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-red">
+                        <div class="col-xl-4 col-lg-12 col-md-12 col-sm-6 col-6 float-left">
+                            <p class="float-left">% change</p>
+                        </div>
+                        <div class="col-xl-8 col-lg-12 col-md-12 col-sm-6 col-6 float-right">
+                            <canvas id="bar-chart-pending" width="100" height="40"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6  col-12">
+                <div class="card dashboard-card-colored">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-8 col-sm-8 col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">8,372K</h5>
+                                <p class="card-text">Case Closed</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-4 col-sm-4 col-4">
+                            <span class="card-image">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-green">
+                        <div class="col-xl-4 col-lg-12 col-md-12 col-sm-6 col-6 float-left">
+                            <p class="float-left">% change</p>
+                        </div>
+                        <div class="col-xl-8 col-lg-12 col-md-12 col-sm-6 col-6 float-right">
+                            <canvas id="bar-chart-closed" width="100" height="40"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6  col-12">
+                <div class="card dashboard-card-colored">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-8 col-sm-8 col-8">
+                            <div class="card-body">
+                                <h5 class="card-title">5,355K</h5>
+                                <p class="card-text">Task Completed</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-4 col-sm-4 col-4">
+                            <span class="card-image">
+                                <i class="fa fa-clipboard" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-orange">
+                        <div class="col-xl-4 col-lg-12 col-md-12 col-sm-6 col-6 float-left">
+                            <p class="float-left">% change</p>
+                        </div>
+                        <div class="col-xl-8 col-lg-12 col-md-12 col-sm-6 col-6 float-right">
+                            <canvas id="bar-chart-completed" width="100" height="40"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-sales">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12  col-xs-12">
+                            <h3 class="card-title ">Sales in 2014</h3>
+                            <p class="card-text">Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without  revolutionary ROI.</p>
+                        </div>
+                        <div class="col-lg-8 col-md-12  col-xs-12">
+                            <canvas id="line-chart-sales" width="500" height="350"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-8 col-md-12  col-xs-12">
+                <div class="card card-leads">
+                    <h6 class="card-title">ACTIVE LEADS</h6>
+                    <hr>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Lead Name</th>
+                                <th>Views</th>
+                                <th>Favourites</th>
+                                <th>Last Visit</th>
+                                <th>Last Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="text-blue">Buyer</td>
+                                <td>Denise Ann</td>
+                                <td>153</td>
+                                <td>0</td>
+                                <td>9:23 AM</td>
+                                <td><i class="fa fa-internet-explorer" aria-hidden="true"></i> 8/27/2015</td>
+                            </tr>
+                            <tr>
+                                <td class="text-blue">Buyer</td>
+                                <td>Denise Ann</td>
+                                <td>153</td>
+                                <td>0</td>
+                                <td>9:23 AM</td>
+                                <td><i class="fa fa-internet-explorer" aria-hidden="true"></i> 8/27/2015</td>
+                            </tr>
+                            <tr>
+                                <td class="text-green">Landlord</td>
+                                <td>Denise Ann</td>
+                                <td>153</td>
+                                <td>0</td>
+                                <td>9:23 AM</td>
+                                <td><i class="fa fa-envelope" aria-hidden="true"></i> 8/27/2015</td>
+                            </tr>
+                            <tr>
+                                <td class="text-blue">Buyer</td>
+                                <td>Denise Ann</td>
+                                <td>153</td>
+                                <td>0</td>
+                                <td>9:23 AM</td>
+                                <td><i class="fa fa-envelope" aria-hidden="true"></i> 8/27/2015</td>
+                            </tr>
+                            <tr>
+                                <td class="text-orange">Seller</td>
+                                <td>Denise Ann</td>
+                                <td>153</td>
+                                <td>0</td>
+                                <td>9:23 AM</td>
+                                <td><i class="fa fa-internet-explorer" aria-hidden="true"></i> 8/27/2015</td>
+                            </tr>
+                            <tr>
+                                <td class="text-blue">Buyer</td>
+                                <td>Denise Ann</td>
+                                <td>153</td>
+                                <td>0</td>
+                                <td>9:23 AM</td>
+                                <td><i class="fa fa-internet-explorer" aria-hidden="true"></i> 8/27/2015</td>
+                            </tr>
+                            <tr>
+                                <td class="text-blue">Buyer</td>
+                                <td>Denise Ann</td>
+                                <td>153</td>
+                                <td>0</td>
+                                <td>9:23 AM</td>
+                                <td><i class="fa fa-envelope" aria-hidden="true"></i> 8/27/2015</td>
+                            </tr>
+                            <tr>
+                                <td class="text-blue">Buyer</td>
+                                <td>Denise Ann</td>
+                                <td>153</td>
+                                <td>0</td>
+                                <td>9:23 AM</td>
+                                <td><i class="fa fa-internet-explorer" aria-hidden="true"></i> 8/27/2015</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-12  col-xs-12">
+                <div class="card card-todo">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="card-title">TODO LIST</p>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" class="btn btn-success" id="todo-toggle-all">Toggle All</button>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <label class="checkbox-label">Collaboratively administrate
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-label">Another todo on the list. Add as many you want.
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-label">Dramatically maintain clicks-and-mortar
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-label">administrate empowered markets.
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <hr>
+                    <input type="text" class="add-task" placeholder="Write some todo task here">
+                </div>
+                <div class="todo-footer">
+                    <button class="btn btn-success">All</button>
+                    <button class="btn btn-default">Active</button>
+                    <button class="btn btn-default float-right" id="clear-completed">Clear Completed</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-xs-12">
+                <div class="row">
+                    <div class="card dashboard-activities-line">
+                        <h6 class="card-title">ACTIVITIES</h6>
+                        <hr>
+                        <div class="row">
+                            <div class="timeline">
+                                <div class="timeline-container">
+                                    <div class="content">
+                                        <p>2 mins ago</p>
+                                        <p>Template Builder Access (Video tutorial inside documentation)</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-container">
+                                    <div class="content">
+                                        <p>1 hour ago</p>
+                                        <p>Designed the wordpress theme lily created her account.</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-container">
+                                    <div class="content">
+                                        <p>4:30 p.m </p>
+                                        <p>Your domain will expired in 13 days.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card dashboard-activities-pie">
+                        <h6 class="card-title">ACTIVITIES</h6>
+                        <hr>
+                        <div class="row pie-chart">
+                            <div class="col-xl-5 col-lg-12 col-md-12 col-xs-12">
+                                <canvas id="activities-pie-chart" width="250" height="250"></canvas>
+                            </div>
+                            <div class="col-xl-7 col-lg-12 col-md-12  col-xs-12 activities-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut .                                                              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-xs-12">
+                <div class="card dashboard-analytics">
+                    <h5 class="card-title">ANALYTICS</h5>
+                    <hr>
+                    <canvas id="analytics-bar-chart" width="800" height="450"></canvas>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="footer">
+                <ul class="float-left">
+                    <li>Copyright</li>
+                    <li>M7amadsa3ed 2015. </li>
+                    <li>All rights reserved</li>
+                    <li>Careers</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<!--JS files-->
+<script src="assets/js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+<script src="assets/js/vauban_project.js"></script>
+
+</body>
+</html>

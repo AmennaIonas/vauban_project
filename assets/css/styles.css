@@ -1,0 +1,533 @@
+@font-face {
+    font-family: Raleway;
+    src: url("Raleway-Regular.ttf");
+}
+@font-face {
+    font-family: Raleway-Bold;
+    src: url("Raleway-Bold.ttf");
+}
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    font-weight: 400;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgb(237, 240, 245);
+}
+
+/*TOP NAVBAR*/
+.main-header .navbar .nav li a {
+    color: #fff;
+}
+.navbar-nav li {
+    float: left;
+}
+.navbar-custom-menu ul>li{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.main-header .logo {
+    background-color: rgb(48, 63, 159);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    border-bottom: 0 solid transparent;
+    float: left;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    width: 230px;
+    font-family: "Raleway-Bold",sans-serif;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+.main-header .navbar {
+    background-color: rgb(63, 81, 181);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 0;
+    margin-left: 230px;
+    border: none;
+    min-height: 50px;
+    border-radius: 0;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.navbar-nav {
+    display: inline;
+}
+
+.navbar-title{
+    font-family: "Raleway";
+    color: rgb(197, 202, 233);
+}
+.navbar li span.label{
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    text-align: center;
+    font-size: 9px;
+    padding: 3px;
+    line-height: .9;
+    background-color: red;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+.dropdown-toggle:after{
+    display: none;
+}
+
+ /* LEFT SIDE NAVBAR */
+
+ .main-sidebar, .left-side {
+    background-color: #fff;
+}
+.main-sidebar {
+    position: absolute;
+    min-height: 100%;
+    width: 230px;
+}
+.user-panel{
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 15px;
+}
+.user-panel .image{
+    padding-right: 20px;
+}
+.user-panel .image img{
+    width: 50px;
+}
+.user-panel .info p{
+    color: rgb(106, 108, 111);
+    font-family: "Raleway";
+    font-weight: bold;
+    margin: 0;
+}
+.user-panel .info p:last-child{
+    font-size: 12px;
+}
+.sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar-menu>li{
+    margin: 15px;
+    color: rgb(106, 108, 111);
+    font-family: "Raleway";
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sidebar-menu>li i{
+    color: rgb(106, 108, 111);
+}
+.sidebar-menu>li a{
+    text-decoration: none;
+
+}
+.sidebar-menu>li a span{
+    color: rgb(106, 108, 111);
+    font-family: "Raleway";
+}
+.sidebar-menu>.header{
+    font-family: "Raleway";
+    font-size: 12.5px;
+    color: rgb(106, 108, 111);
+    font-weight: 600;
+}
+
+/*CONTENT SIDE*/
+
+.content-wrapper{
+    margin-left: 230px;
+}
+
+/* CARDS*/
+.card.dashboard-card-simple{
+    margin: 20px 0 20px 20px;
+    border-radius: 0;
+}
+.dashboard-card-colored{
+    border-radius: 0;
+}
+.content-wrapper .row>div:nth-child(2) .card.dashboard-card-simple{
+    margin: 20px 20px 20px 0;
+}
+
+.content-wrapper .row:nth-child(2)>div:first-child .dashboard-card-colored{
+    margin: 0 0 10px 20px;
+}
+.content-wrapper .row:nth-child(2)>div:nth-child(2) .dashboard-card-colored,
+.content-wrapper .row:nth-child(2)>div:nth-child(3) .dashboard-card-colored{
+    margin: 0 0 10px 0;
+}
+.content-wrapper .row:nth-child(2)>div:nth-child(4) .dashboard-card-colored{
+    margin: 0 20px 10px 0;
+}
+.dashboard-card-colored div:nth-child(2) p{
+    color: #fff;
+    margin: 10px;
+}
+.card.card-sales{
+    margin: 20px;
+    border-radius: 0;
+    padding: 30px;
+}
+.dashboard-activities-line{
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    border-radius: 0;
+}
+.dashboard-activities-line .card-title{
+    font-family: "Raleway-Bold";
+    color: rgb(40, 40, 40);
+    font-size: 16px;
+}
+
+/* ACTIVITIES PIE CARD*/
+
+.dashboard-activities-pie{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 0;
+}
+.dashboard-activities-pie .card-title{
+    font-family: "Raleway-Bold";
+    color: rgb(40, 40, 40);
+    font-size: 16px;
+}
+.card-number {
+    font-size: 45px;
+    line-height: 90px;
+    font-family: "Raleway";
+    color: rgb(40, 40, 40);
+    font-size: 33.333px;
+}
+#bar-chart-leads{
+    overflow: hidden;
+}
+#bar-chart-leads, .card-blue{
+    background-color: #3F51B5;
+}
+
+.card-red{
+    background-color: #E64A19;
+}
+.card-green{
+    background-color: #4CB050;
+}
+.card-orange{
+    background-color: #FF9F00;
+}
+
+.dashboard-card-colored .card-image{
+    font-size: 60px;
+    color: #E9E9E9;
+}
+.dashboard-card-colored .card-title{
+    font-size: 21px;
+    font-family: "Raleway";
+}
+
+.dashboard-card-colored .card-title:nth-child(1), .text-blue{
+    color: #3F51B5;
+}
+.dashboard-card-colored .card-title:nth-child(2), .text-red{
+    color: #E64A19;
+}
+.dashboard-card-colored .card-title:nth-child(3), .text-green{
+    color: #4CB050;
+}
+.dashboard-card-colored .card-title:nth-child(4), .text-orange{
+    color: #FF9F00;
+}
+.dashboard-card-colored .card-text{
+    font-size: 16.667px;
+    font-family: "Raleway";
+    color: rgb(40, 40, 40);
+    line-height: 2;
+}
+
+.card-sales .card-title{
+    color: #3F51B5;
+    font-family: "Raleway";
+}
+.card-sales .card-text{
+    font-size: 20px;
+    font-family: "Raleway";
+    color: rgb(106, 108, 111);
+}
+
+/* ACTIVE LEADS CARD*/
+.card-leads{
+    margin: 20px;
+    margin-right: 10px;
+    padding: 20px;
+    border-radius: 0;
+}
+
+.card-leads .card-title{
+    font-family: "Raleway-Bold";
+    color: rgb(40, 40, 40);
+}
+
+.card-leads th{
+    font-family: "Raleway-Bold";
+    color: rgb(40, 40, 40);
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+.card-leads td{
+    padding: 10px 0;
+}
+
+/* TO DO LIST CARD*/
+.card-todo{
+    margin: 20px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 0;
+}
+.todo-footer{
+    margin: 20px;
+    margin-top: 0;
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 0;
+    background-color: #F0F5FB;
+    border: 1px solid rgba(0, 0, 0, 0.125)
+}
+.todo-footer button{
+    border-radius: 0;
+}
+.todo-footer .btn-default{
+    background-color: #fff;
+}
+.card-todo .card-title{
+    font-family: "Raleway-Bold";
+    color: rgb(40, 40, 40);
+    font-size: 16px;
+}
+#todo-toggle-all{
+    width: 100px;
+    border-radius: 0;
+    float: right;
+}
+.line-trough{
+    text-decoration: line-through;
+    color: rgba(40, 40, 40, 0.502);
+}
+
+.checkbox-label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.add-task{
+    border: none;
+    font-size: 17px;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+/* When the checkbox is checked, add a green background */
+.checkbox-label input:checked ~ .checkmark {
+    background-color: #4CB050;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-label .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* ACTIVITIES TIMELINE CARD */
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+}
+
+/* The actual timeline (the vertical line) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    background-color: #000000;
+}
+
+/* Container around content */
+.timeline-container {
+    padding: 10px;
+    position: relative;
+    background-color: inherit;
+    left: 10%;
+}
+
+/* The circles on the timeline */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -17px;
+    background-color: white;
+    top: 23px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+/* Fix the circle for containers on the right side */
+.timeline-container::after {
+    left: -5px;
+}
+
+/* The actual content */
+.timeline-container .content {
+    padding: 3px 10px;
+}
+
+/*Colored dots on the timeline*/
+.dashboard-activities-line .timeline-container:nth-child(1):after{
+    background-color: #3F51B5
+}
+
+.dashboard-activities-line .timeline-container:nth-child(2):after{
+    background-color: #E64A19
+}
+
+.dashboard-activities-line .timeline-container:nth-child(3):after{
+    background-color: #4CB050
+}
+/* Timeline text formatting */
+.dashboard-activities-line .timeline-container .content>p:first-child{
+    font-size: 13px;
+    font-family: "Raleway";
+    color: rgb(176, 176, 176);
+    line-height: 2.244;
+    margin: 0;
+}
+
+.dashboard-activities-line .timeline-container .content>p:last-child{
+    font-size: 16px;
+    font-family: "Raleway";
+    color: #5d5d5d;
+}
+
+.activities-text p{
+    font-size: 13px;
+    font-family: "Raleway";
+    color: rgb(40, 40, 40);
+    line-height: 1.923;
+}
+
+/*ANALYTICS CARD*/
+
+.dashboard-analytics{
+    margin: 20px 20px 20px 10px;
+    padding: 20px;
+    border-radius: 0;
+}
+
+.dashboard-analytics .card-title{
+    font-family: "Raleway-Bold";
+    color: rgb(40, 40, 40);
+    font-size: 16px;
+}
+
+/*FOOTER*/
+.footer li{
+    display: inline;
+    padding: 20px;
+    font-family: "Raleway-Bold";
+    color: rgb(40, 40, 40);
+
+}
+
+/* Closes sidebar menu in mobile*/
+.close-menu{
+    display: none;
+}
+.open-menu{
+    display: none;
+}
+
+/* Left sidebar numbers */
+.sidebar-blue{
+    background: #3F51B5;
+    padding: 3px;
+    color: white;
+    border-radius: 3px;
+}
+.sidebar-green{
+    background: #4CB050;
+    padding: 3px;
+    color: white;
+    border-radius: 3px;
+}
+.sidebar-orange{
+    background: #FF9F00;
+    padding: 3px;
+    color: white;
+    border-radius: 3px;
+}
+.sidebar-red{
+    background: #E64A19;
+    padding: 3px;
+    color: white;
+    border-radius: 3px;
+}
